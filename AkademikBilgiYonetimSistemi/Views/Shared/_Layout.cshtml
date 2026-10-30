@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BilgiYonetimSistemi</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/anasayfa.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/makale.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/proje.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/uyelik.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/bildiri.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/ders.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/idariGorev.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tez.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/patent.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/kitap.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tez.css" asp-append-version="true" />
+    <link href="~/css/odul.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/deneyim.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/sanatsalfaal.css" rel="stylesheet" asp-append-version="true" />
+   
+    @using Microsoft.AspNetCore.Http
+    @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+</head>
+
+<body>
+    <!--Sayfanın tümünü kapsayan div etiketi-->
+    <div class="wrapper">
+        <!--Sidebar kısmını oluşturmak için kullanılan div etiketi-->
+        <nav id="sidebar">
+            <!--Sidebar kısmında üst bölümde bulunan resim ve yazıların ayarlamaları-->
+            <div class="sidebar-header">
+                <img src="~/resimler/irfankaymaz.jpg" style="vertical-align:middle;margin: 31px 45px;width: 178px;height: 178px;border-radius: 102px 102px" />
+                <h5 style="margin-left: 38%; font-size: 20px">@HttpContextAccessor.HttpContext.Session.GetString("unvan")</h5>
+                <h4 style="margin-left: 22%; font-size: 22px">@HttpContextAccessor.HttpContext.Session.GetString("ad") @HttpContextAccessor.HttpContext.Session.GetString("soyad")</h4>
+                <br />
+                
+                <a target="blank" href="@HttpContextAccessor.HttpContext.Session.GetString("google_scholar")" title="Google Akademik">
+                <i class="ai ai-google-scholar"></i>
+                </a>
+
+                <a target="_blank" href="@HttpContextAccessor.HttpContext.Session.GetString("orcid")" title="Orcid">
+                    <i class="ai ai-orcid"></i>
+                </a>
+
+                <a target="_blank" href="@HttpContextAccessor.HttpContext.Session.GetString("yoksis")" title="Yöksis">
+                    <img src="~/resimler/yöksis.png" class="image-yoksis"/>
+                    </a>
+  
+                <hr />
+            </div>
+            <!--Menüleri oluşturmak için kullanılan ul li etiketleri-->
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="~/Home">
+                        <i class="fa fa-home" style="margin-left: 5%; color: white;"></i>
+                        <p>Anasayfa</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/MakaleListesiDetay">
+                        <i class="fa-regular fa-pen-to-square " style="margin-left: 5%; color: white;"></i>
+                        <p>Makaleler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/ProjeListesi">
+                        <i class="fa-solid fa-list-check " style="margin-left: 5%; color: white;"></i>
+                        <p>Projeler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/UyelikListesi">
+                        <i class="fa-solid fa-user-plus " style="margin-left: 5%; color: white;"></i>
+                        <p>Üyelikler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/BildiriListesi">
+                        <i class="fa-solid fa-newspaper " style="margin-left: 5%; color: white;"></i>
+                        <p>Bildiriler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/DersListesi">
+                        <i class="fa-solid fa-book " style="margin-left: 5%; color: white;"></i>
+                        <p>Dersler</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="~/IdariGorevListesi">
+                        <i class="fa-solid fa-people-roof" style="margin-left: 5%; color: white;"></i>
+                        <p>İdari Görevler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/PatentListesi">
+                        <i class="fa-solid fa-signature" style="margin-left: 5%; color: white;"></i>
+                        <p>Patentler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/KitapListesi">
+                        <i class=" fa-solid fa-book-open" style="margin-left: 5%; color: white;"></i>
+                        <p>Kitaplar</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/OdulListesi">
+                        <i class=" fa-solid fa-award" style="margin-left: 5%; color: white;"></i>
+                        <p>Ödüller</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="~/SanatsalFaalListe">
+                        <i class=" fa-solid fa-headphones" style="margin-left: 5%; color: white;"></i>
+                        <p>Sanatsal Faaliyetler</p>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="~/TezDanismanListesi">
+                        <i class=" fa-solid fa-pen" style="margin-left: 5%; color: white;"></i>
+                        <p>Yönetilen Tezler</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/DeneyimListesi">
+                        <i class="fa-regular fa-bookmark" style="margin-left: 5%; color: white;"></i>
+                        <p>Üniversite Dışı Deneyimler</p>
+                    </a>
+                </li>
+
+            </ul>
+        </nav> <!--Sidebarın bitimi-->
+        <!--Header ve context içeriklerinin oluşturulması için gerekli div etiketi-->
+        <div id="content">
+            <!--Sayfanın sola doğru açılır kapanır olması için gerekli olan butonun ayarlanılması-->
+            <div class="text">
+                <button type="button" id="sidebarCollapse" class="btn" style="background-color= #1c0f45">
+                    <i class="fas fa-align-left"></i>
+                </button>
+                <!--Header kısmında bulunan logo ve başlıklar-->
+                <div class="header">
+                    <img src="~/resimler/etuLogo.png" />
+                    @*<span class="text-header">Erzurum Teknik Üniversitesi</span>*@
+                    <span class="text-header-title"><bold>Akademik Bilgi Yönetim Sistemi</bold></span>
+                    <br />
+                    <span class="span-email">E-mail:</span>
+                    <span class="text-mail">
+                        @HttpContextAccessor.HttpContext.Session.GetString("eemail")
+                     @*   @ViewBag.email*@
+                        
+                    </span>
+                    <br />
+                    <span class="span-telno">Dahili Numarası:</span>
+                    <span class="text-telno">
+                        @HttpContextAccessor.HttpContext.Session.GetString("telefonNumarasi")
+                        @*@ViewBag.telnumarasi*@
+                    </span>
+                    <br />
+                </div>
+
+            </div>
+            <!--İçeriklerin görünmesi için oluşturulan div etiketi-->
+            <div class="text-center">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap ve oluşturulan butonun clik olayı için kullanılan script dosyaları-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>

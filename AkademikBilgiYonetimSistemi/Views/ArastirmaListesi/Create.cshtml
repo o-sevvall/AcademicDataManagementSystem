@@ -1,0 +1,132 @@
+﻿@model AkademikBilgiYonetimSistemi.Models.ArastirmaListesi
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>ArastirmaListesi</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TcKimlikNo" class="control-label"></label>
+                <input asp-for="TcKimlikNo" class="form-control" />
+                <span asp-validation-for="TcKimlikNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SId" class="control-label"></label>
+                <input asp-for="SId" class="form-control" />
+                <span asp-validation-for="SId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TurId" class="control-label"></label>
+                <input asp-for="TurId" class="form-control" />
+                <span asp-validation-for="TurId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TurAdi" class="control-label"></label>
+                <input asp-for="TurAdi" class="form-control" />
+                <span asp-validation-for="TurAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Adi" class="control-label"></label>
+                <input asp-for="Adi" class="form-control" />
+                <span asp-validation-for="Adi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Icerik" class="control-label"></label>
+                <input asp-for="Icerik" class="form-control" />
+                <span asp-validation-for="Icerik" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Yer" class="control-label"></label>
+                <input asp-for="Yer" class="form-control" />
+                <span asp-validation-for="Yer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kapsam" class="control-label"></label>
+                <input asp-for="Kapsam" class="form-control" />
+                <span asp-validation-for="Kapsam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KapsamAd" class="control-label"></label>
+                <input asp-for="KapsamAd" class="form-control" />
+                <span asp-validation-for="KapsamAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sure" class="control-label"></label>
+                <input asp-for="Sure" class="form-control" />
+                <span asp-validation-for="Sure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bastar" class="control-label"></label>
+                <input asp-for="Bastar" class="form-control" />
+                <span asp-validation-for="Bastar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bittar" class="control-label"></label>
+                <input asp-for="Bittar" class="form-control" />
+                <span asp-validation-for="Bittar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnvanId" class="control-label"></label>
+                <input asp-for="UnvanId" class="form-control" />
+                <span asp-validation-for="UnvanId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnvanAd" class="control-label"></label>
+                <input asp-for="UnvanAd" class="form-control" />
+                <span asp-validation-for="UnvanAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KurumAd" class="control-label"></label>
+                <input asp-for="KurumAd" class="form-control" />
+                <span asp-validation-for="KurumAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KurumId" class="control-label"></label>
+                <input asp-for="KurumId" class="form-control" />
+                <span asp-validation-for="KurumId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KisiSayisi" class="control-label"></label>
+                <input asp-for="KisiSayisi" class="form-control" />
+                <span asp-validation-for="KisiSayisi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UlkeSehir" class="control-label"></label>
+                <input asp-for="UlkeSehir" class="form-control" />
+                <span asp-validation-for="UlkeSehir" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GuncellemeTarihi" class="control-label"></label>
+                <input asp-for="GuncellemeTarihi" class="form-control" />
+                <span asp-validation-for="GuncellemeTarihi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AktifPasif" class="control-label"></label>
+                <input asp-for="AktifPasif" class="form-control" />
+                <span asp-validation-for="AktifPasif" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AktifPasifAd" class="control-label"></label>
+                <input asp-for="AktifPasifAd" class="form-control" />
+                <span asp-validation-for="AktifPasifAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+

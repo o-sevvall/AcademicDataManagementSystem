@@ -1,0 +1,221 @@
+/*Sayfanýn genel yapýsýnýn tasarýmý*/
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+/*Sidebar kýsmýnýn boyutu, rengi ve süre olayýnýn ayarlanmasý*/
+#sidebar {
+    min-width: 280px;
+    max-width: 280px;
+    background: #1c0f45;
+    color: #fff;
+    transition: all 0.3s;
+}
+/*SÝdebar kýsmýnýn aktif olduðunda ne kadar kaymasý gerektiðinin ayarlanmasý*/
+    #sidebar.active {
+        margin-left: -280px;
+    }
+
+/*Hocanýn isminin altýnda bulunan çizginin tasarýmý*/
+    #sidebar hr {
+        color: white;
+        padding: 1px;
+    }
+/*Sidebar kýsmýna iç dolgu verilmesi*/
+    #sidebar sidebar-header {
+        padding: 20px;
+    }
+
+.ai-google-scholar {
+    background-color: #fff;
+    font-size: 32px;
+    color: #f74248;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 27%;
+    text-align: center;
+}
+
+    .ai-orcid {
+        background-color: transparent;
+        font-size: 34px;
+        color: #A6CE39;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 3%;
+        text-align: center;
+    }
+.image-yoksis {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: -6%;
+    margin-left: 4%;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+/*Menü kýsmý için iç dolgu, yazý boyutu, baþlangýç yeri, rengi ve konumunun ayarlanmasý*/
+    #sidebar ul li a p {
+        padding: 10px;
+        font-size: 1.2em;
+        margin-left: 5%;
+        color: white;
+        display: inline-block;
+    }
+/*Menülerin üzerine gelindiðinde oluþan görüntünün ayarlanýlmasý*/
+    #sidebar ul.components li a:hover {
+        background-color: #7ec0ee;
+        display: block;
+       
+    }
+/*Butonun ayarlarý*/
+.navbar-btn {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+#content {
+    width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+/*Header kýsmýnýn ayarlanýlmasý*/
+    #content .text {
+        background-image: url('../resimler/yeni2.jpg');/*Arka plan resmi verildi*/
+        min-height: 200px;
+        max-height: 200px;
+        border-bottom: 1px solid black;/*Alt çizgisinin ayarlanýlmasý*/
+    }
+
+/*Header da bulunan logonun ayarlanmasý*/
+.text img {
+    width: 109px;
+    margin-left: 200px;
+}
+
+/*Header da bulunan "Erzurum Teknik Üniversitesi" yazýsýnýn ayarlanýlmasý*/
+/*.text-header {
+    color: #5b86c2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 900;
+}*/
+/*Header da bulunan "Akademik Bilgi Yönetim Sistemi" yazýsýnýn ayarlanýlmasý*/
+.text-header-title {
+    margin-left: 180px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #1b1464
+}
+.span-email {
+    margin-left: 69%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1c0f45;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.span-telno {
+    margin-left: 69%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1c0f45;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text-mail {
+    margin-right: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+}
+.text-telno {
+    margin-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+}
+/*Kullanýlabilecek cihazlar için yapýlan deðiþikleri*/
+@media (max-width: 1280px) { /*1280 pxden düþük cihazlar için ayarlanýldý*/
+    #sidebar {
+        margin-left: -280px;/*Butona basýldýðý an sidebarýn sola doðru gitmesi*/
+    }
+
+        #sidebar.active {
+            margin-left: 0;
+        }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+
+   /*Header kýsmýnda bulunan logo ve yazýlarýn diðer cihazlara göre ayarlanýlmasý*/
+    .text img {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .text-header {
+        color: #a7c9e2;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .text-header-title {
+        margin-left: 6%;
+        font-size: 17px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        color: #1b1464
+       
+    }
+
+    .span-email {
+        margin-left: 2%;
+        font-weight: bold;
+        font-size: 16px;
+        color: #1c0f45;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .span-telno {
+        margin-left: 2%;
+        font-weight: bold;
+        font-size: 16px;
+        color: #1c0f45;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .text-mail {
+        margin-right: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3em;
+    }
+
+    .text-telno {
+        margin-right: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3em;
+    }
+
+}

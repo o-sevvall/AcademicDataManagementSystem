@@ -1,0 +1,32 @@
+.container-fluid-bildiri {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bs-callout-warning-bildiri {
+    border-left-color: #1c0f45;
+    border-right-color: #1c0f45;
+}
+
+.bs-callout-bildiri {
+    border-color: #1c0f45;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 0px 0px 1px 5px;
+    margin: 5px 1px;
+}
+
+    .bs-callout-bildiri h4 {
+        text-align: left;
+        color: darkmagenta;
+        margin-left: 12px;
+    }
+
+    .bs-callout-bildiri p {
+        text-align: left;
+        font-size: 14px;;
+        font-weight: 500;
+        margin-left: 12px;
+    }

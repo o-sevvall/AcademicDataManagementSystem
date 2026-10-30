@@ -1,0 +1,80 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.PersonelLinkListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TcKimlikNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArastirmaciId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KadroUnvanAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonelAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonelSoyadi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KadroYeri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YokakademikLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonelResmiLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orcid)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TcKimlikNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArastirmaciId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KadroUnvanAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonelAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonelSoyadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KadroYeri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YokakademikLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonelResmiLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Orcid)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

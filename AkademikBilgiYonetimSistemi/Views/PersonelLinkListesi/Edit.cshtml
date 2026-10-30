@@ -1,0 +1,75 @@
+﻿@model AkademikBilgiYonetimSistemi.Models.PersonelLinkListesi
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>PersonelLinkListesi</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="TcKimlikNo" class="control-label"></label>
+                <input asp-for="TcKimlikNo" class="form-control" />
+                <span asp-validation-for="TcKimlikNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArastirmaciId" class="control-label"></label>
+                <input asp-for="ArastirmaciId" class="form-control" />
+                <span asp-validation-for="ArastirmaciId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KadroUnvanAdi" class="control-label"></label>
+                <input asp-for="KadroUnvanAdi" class="form-control" />
+                <span asp-validation-for="KadroUnvanAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonelAdi" class="control-label"></label>
+                <input asp-for="PersonelAdi" class="form-control" />
+                <span asp-validation-for="PersonelAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonelSoyadi" class="control-label"></label>
+                <input asp-for="PersonelSoyadi" class="form-control" />
+                <span asp-validation-for="PersonelSoyadi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KadroYeri" class="control-label"></label>
+                <input asp-for="KadroYeri" class="form-control" />
+                <span asp-validation-for="KadroYeri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YokakademikLink" class="control-label"></label>
+                <input asp-for="YokakademikLink" class="form-control" />
+                <span asp-validation-for="YokakademikLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonelResmiLink" class="control-label"></label>
+                <input asp-for="PersonelResmiLink" class="form-control" />
+                <span asp-validation-for="PersonelResmiLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orcid" class="control-label"></label>
+                <input asp-for="Orcid" class="form-control" />
+                <span asp-validation-for="Orcid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,85 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.DersListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">DERSLER</span>
+<br />
+<br />
+<hr />
+
+<div class="accordion-ders">
+    <div class="accordion-item-ders">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#collapseOne"></button>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+            @*Ders sayafsı için div ile tablo oluşturuldu*@
+            <div class="table-responsive">
+                <div class="table">
+                    <div class="thead">
+                        <div class="tr">
+                            @*Tablonun başlıkları*@
+                            <div class="th" style="color:#5882ff">Dönem</div>
+                            <div class="th" style="color:#5882ff">Öğrenim Türü</div>
+                            <div class="th" style="color:#5882ff">Ders Adı</div>
+                            <div class="th" style="color:#5882ff">Dil</div>
+                            <div class="th" style="color:#5882ff">Ders Saati</div>
+                        </div>
+                    </div>
+@foreach (var item in Model) {
+                <div class="tbody">
+                    <div class="tr">
+                                @*Tablonun içerikleri*@
+                                <div class="td" style="font-weight: 600;">@Html.DisplayFor(modelItem => item.AkademikYil)</div>
+                                <div class="td" style="font-weight: 600;">&nbsp; @Html.DisplayFor(modelItem => item.OgrenimAdi)</div>
+                                <div class="td" style="font-weight: 600;">&nbsp; @Html.DisplayFor(modelItem => item.DersAdi)</div>
+                                <div class="td" style="font-weight: 600;">@Html.DisplayFor(modelItem => item.DilAdi)</div>
+                                <div class="td" style="font-weight: 600;">@Html.DisplayFor(modelItem => item.DersSaati)</div>
+                    </div>
+                    
+                </div>
+    
+                            
+           
+       
+}
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+@*<div class="m-4">
+    <div class="accordion-ders">
+        <div class="accordion-item-ders">
+            <button type="button" class="accordion-button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#collapseOne"></button>
+
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                <div class="card-body-ders">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Dönem</th>
+                                <th>Öğrenim Türü</th>
+                                <th>Ders Adı</th>
+                                <th>Dil</th>
+                                <th>Ders Saati</th>
+                            </tr>
+                        </thead>
+
+                               @* <tbody>
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.AkademikYil)</td>
+                                         <td> &nbsp; @Html.DisplayFor(modelItem => item.OgrenimAdi)</td>
+                                        <td> &nbsp; @Html.DisplayFor(modelItem => item.DersAdi)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.DilAdi)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.DersSaati)</td>
+                                    </tr>
+                                </tbody>
+
+                *@

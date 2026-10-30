@@ -1,0 +1,22 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.DeneyimListesi>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">ÜNİVERSİTE DIŞI DENEYİM</span>
+<br />
+<br />
+<hr />
+<!--Controller kısmında veritabanından çektiğimiz bilgilerin projeler sayfasında kullanılması-->
+@foreach (var item in Model)
+{
+    <div class="container-fluid-deneyim">
+        <div id="callout-stacked-modals" class="bs-callout-deneyim bs-callout-warning-deneyim">
+            <h4>@Html.DisplayFor(modelItem => item.KurulusAdi)</h4>
+            <div class="yazarlar-deneyim">
+                <p>  @Html.DisplayFor(modelItem => item.GorevAdi)</p>
+                <font color="red"><p>@Html.DisplayFor(modelItem => item.BasTar)-@Html.DisplayFor(modelItem => item.BitTar)</p></font>
+            </div>
+        </div>
+    </div>
+}

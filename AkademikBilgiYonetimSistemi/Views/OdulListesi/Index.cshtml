@@ -1,0 +1,35 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.OdulListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    string left = "left";
+}
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">ÖDÜLLER</span>
+<br />
+<br />
+<hr />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                @foreach (var item in Model)
+                {
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <h3 class="title"> @Html.DisplayFor(modelItem => item.OdulAdi)</h3>
+                            <p class="description">
+                            <p>@Html.DisplayFor(modelItem => item.PKurumAd)</p>
+                            <span style="font-size: 14px; font-weight:600;">
+                                    @Html.DisplayFor(modelItem => item.IsyeriTuruAdi), @Html.DisplayFor(modelItem => item.UlkeAd)
+                            </span>
+                        </a>
+                    </div>
+
+
+
+                }
+            </div>
+        </div>
+    </div>
+</div>

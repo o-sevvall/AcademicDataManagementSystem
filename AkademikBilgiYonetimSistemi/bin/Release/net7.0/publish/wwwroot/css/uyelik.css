@@ -1,0 +1,47 @@
+
+
+.timeline-uyelik .timeline-item-uyelik .card-uyelik {
+    max-height: 300px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+.timeline-uyelik img {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    left: 18px;
+    top: 0;
+}
+
+.timeline-uyelik .timeline-item-uyelik {
+    display: flex;
+    position: relative;
+}
+
+    .timeline-uyelik .timeline-item-uyelik::before {
+        background-color: #8a9eaf;
+        content: "";
+        height: 135%;
+        left: 2%;
+        position: absolute;
+        top: 9%;
+        width: 5px;
+        z-index: -1;
+    }
+
+    .timeline-uyelik .timeline-item-uyelik .badge-uyelik {
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .timeline-uyelik .timeline-item-uyelik .timeline-content-uyelik {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 0 0 0 1rem;
+    }

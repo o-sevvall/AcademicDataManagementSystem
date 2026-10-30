@@ -1,0 +1,55 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.IdariGorevListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">İDARİ GÖREVLER</span>
+<br />
+<br />
+<hr />
+
+<div class="container-idariGorev">
+    <div class="row-idariGorev">
+        <div class="col-md-6">
+            <div class="col-md-offset-1 col-md-8 col-sm-12" style="margin-top: 20px; margin-left:150px;">
+                <div>
+                    <ul class="timeline-idariGorev">
+                        @foreach (var item in Model)
+                        {
+                            <li class="time-label-idariGorev">
+                                <span class="label-idariGorev" style="background-color:#1c1364">@Html.DisplayFor(modelItem => item.BasTar)</span>
+                                </li>
+                                <li>
+                                <div class="timeline-footer-idariGorev">
+                                    <span class="label-idariGorev" style="background-color:#2e629c;">@Html.DisplayFor(modelItem => item.GorevAdi)</span>
+                                    </div>
+                                <div class="timeline-item-idariGorev">
+                                        <h4>@Html.DisplayFor(modelItem => item.UnvBirimAdi)</h4>
+                                    <div class="timeline-body-idariGorev">
+                                            <h5>@Html.DisplayFor(modelItem => item.Fakultebilgisi)</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                        }
+                        <li>
+                            <img src="~/resimler/etüicon.png" />
+                        </li>
+                       
+                    </ul>
+                 
+                </div>
+                       
+            </div>
+                       
+        </div>
+                       
+    </div>
+                       
+</div>
+                       
+
+
+
+        

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.BildiriListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">BİLDİRİLER</span>
+<br />
+<br />
+<hr />
+
+@foreach (var item in Model) {
+    <div class="container-fluid-bildiri">
+        <div id="callout-stacked-modals" class="bs-callout-bildiri bs-callout-warning-bildiri">
+            <h4>@Html.DisplayFor(modelItem => item.BildiriAdi)</h4>
+            <p><font color="blue">@Html.DisplayFor(modelItem => item.YazarAdi)</font> - (@Html.DisplayFor(modelItem => item.EtkinlikBasTarihi) - @Html.DisplayFor(modelItem => item.EtkinlikBitTarihi)) - @Html.DisplayFor(modelItem => item.YayinYeri) - @Html.DisplayFor(modelItem => item.KapsamAd) - @Html.DisplayFor(modelItem => item.BildiriTur)</p>
+        </div>
+    </div>       
+}
+   

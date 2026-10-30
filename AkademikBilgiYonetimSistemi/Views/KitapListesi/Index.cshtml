@@ -1,0 +1,32 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.KitapListesi>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">KİTAPLAR</span>
+<br />
+<br />
+<hr />
+<!--Controller kısmında veritabanından çektiğimiz bilgilerin projeler sayfasında kullanılması-->
+@foreach (var item in Model)
+{
+    <div class="container-fluid-kitap">
+        <div id="callout-stacked-modals" class="bs-callout-kitap bs-callout-warning-kitap">
+            <h4>
+                @Html.DisplayFor(modelItem => item.KitapAdi)
+
+
+            </h4>
+            <div class="yazarlar-kitap">
+                <p>
+                    <font color="blue"> @Html.DisplayFor(modelItem => item.YazarAdi)</font>,
+                    Yayın Yeri:@Html.DisplayFor(modelItem => item.YayinEvi),
+                    Basım sayısı:@Html.DisplayFor(modelItem => item.KacinciBasim),
+                    Sayfa sayısı:@Html.DisplayFor(modelItem => item.SaysaSayisi),
+                    ISBN:@Html.DisplayFor(modelItem => item.Isbn)
+
+                </p>
+            </div>
+        </div>
+    </div>
+}

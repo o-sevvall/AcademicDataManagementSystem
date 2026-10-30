@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.UyelikListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">ÜYELİKLER</span>
+<br />
+<br />
+<hr />
+
+
+
+
+
+<div class="container-uyelik padding-uyelik">
+    <div class="timeline-uyelik">
+        <div class="timeline-item-uyelik">
+            <div class="timeline-content-uyelik">
+                <img src="~/resimler/etüicon.png" />
+                <div class="card-uyelik card-default- margin-medium-bottom- overflow-auto-">
+                    <div class="card-header-uyelik">
+                        @foreach (var item in Model)
+                        {
+                        <div class="grid-small flex-middle" uk-grid>
+                                <h3 class="card-title-uyelik">@Html.DisplayFor(modelItem => item.KurulusAdi)</h3>
+                        </div>
+                   
+                    <div class="card-body-uyelik">
+                                <p class="text-uyelik" style="font-size:16px; color:#e1100b; font-weight:500;">
+                                    @Html.DisplayFor(modelItem => item.UyelikDurumuAd) - @Html.DisplayFor(modelItem => item.BasTar)
+                        </p>
+                    </div>
+                    }
+                        <img src="~/resimler/etüicon.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       
+
+
+

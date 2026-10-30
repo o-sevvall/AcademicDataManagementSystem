@@ -1,0 +1,452 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AkademikBilgiYonetimSistemi
+build_property.RootNamespace = AkademikBilgiYonetimSistemi
+build_property.ProjectDir = C:\Users\onals\Desktop\pc\AkademikBilgiYonetimSistemi\AkademikBilgiYonetimSistemi\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\onals\Desktop\pc\AkademikBilgiYonetimSistemi\AkademikBilgiYonetimSistemi
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 7.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/AkademikGorevListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWthZGVtaWtHb3Jldkxpc3Rlc2lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/AkademikGorevListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWthZGVtaWtHb3Jldkxpc3Rlc2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/AkademikGorevListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWthZGVtaWtHb3Jldkxpc3Rlc2lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/AkademikGorevListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWthZGVtaWtHb3Jldkxpc3Rlc2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/AkademikGorevListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWthZGVtaWtHb3Jldkxpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ArastirmaListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhc3Rpcm1hTGlzdGVzaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ArastirmaListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhc3Rpcm1hTGlzdGVzaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ArastirmaListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhc3Rpcm1hTGlzdGVzaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ArastirmaListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhc3Rpcm1hTGlzdGVzaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ArastirmaListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJhc3Rpcm1hTGlzdGVzaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/BildiriListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZGlyaUxpc3Rlc2lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/BildiriListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZGlyaUxpc3Rlc2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/BildiriListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZGlyaUxpc3Rlc2lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/BildiriListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZGlyaUxpc3Rlc2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/BildiriListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZGlyaUxpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DeneyimListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVuZXlpbUxpc3Rlc2lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DeneyimListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVuZXlpbUxpc3Rlc2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DeneyimListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVuZXlpbUxpc3Rlc2lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DeneyimListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVuZXlpbUxpc3Rlc2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DeneyimListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVuZXlpbUxpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DersListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc0xpc3Rlc2lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DersListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc0xpc3Rlc2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DersListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc0xpc3Rlc2lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DersListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc0xpc3Rlc2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/DersListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc0xpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/EditorlukListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9ybHVrTGlzdGVzaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/EditorlukListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9ybHVrTGlzdGVzaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/EditorlukListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9ybHVrTGlzdGVzaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/EditorlukListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9ybHVrTGlzdGVzaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/EditorlukListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9ybHVrTGlzdGVzaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/HakemlikListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFrZW1saWtMaXN0ZXNpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/HakemlikListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFrZW1saWtMaXN0ZXNpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/HakemlikListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFrZW1saWtMaXN0ZXNpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/HakemlikListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFrZW1saWtMaXN0ZXNpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/HakemlikListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFrZW1saWtMaXN0ZXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/IdariGorevListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRhcmlHb3Jldkxpc3Rlc2lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/IdariGorevListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRhcmlHb3Jldkxpc3Rlc2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/IdariGorevListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRhcmlHb3Jldkxpc3Rlc2lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/IdariGorevListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRhcmlHb3Jldkxpc3Rlc2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/IdariGorevListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRhcmlHb3Jldkxpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/KitapListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBMaXN0ZXNpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/KitapListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBMaXN0ZXNpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/KitapListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBMaXN0ZXNpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/KitapListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBMaXN0ZXNpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/KitapListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBMaXN0ZXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/MakaleListesiDetay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrYWxlTGlzdGVzaURldGF5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/MakaleListesiDetay/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrYWxlTGlzdGVzaURldGF5XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/MakaleListesiDetay/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrYWxlTGlzdGVzaURldGF5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/MakaleListesiDetay/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrYWxlTGlzdGVzaURldGF5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/MakaleListesiDetay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFrYWxlTGlzdGVzaURldGF5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OdulListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2R1bExpc3Rlc2lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OdulListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2R1bExpc3Rlc2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OdulListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2R1bExpc3Rlc2lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OdulListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2R1bExpc3Rlc2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OdulListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2R1bExpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OgrenimBilgisiListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5pbUJpbGdpc2lMaXN0ZXNpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OgrenimBilgisiListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5pbUJpbGdpc2lMaXN0ZXNpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OgrenimBilgisiListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5pbUJpbGdpc2lMaXN0ZXNpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OgrenimBilgisiListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5pbUJpbGdpc2lMaXN0ZXNpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/OgrenimBilgisiListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5pbUJpbGdpc2lMaXN0ZXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PatentListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0ZW50TGlzdGVzaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PatentListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0ZW50TGlzdGVzaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PatentListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0ZW50TGlzdGVzaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PatentListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0ZW50TGlzdGVzaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PatentListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0ZW50TGlzdGVzaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PersonelLinkListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxMaW5rTGlzdGVzaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PersonelLinkListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxMaW5rTGlzdGVzaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PersonelLinkListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxMaW5rTGlzdGVzaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PersonelLinkListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxMaW5rTGlzdGVzaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/PersonelLinkListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxMaW5rTGlzdGVzaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ProjeListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVMaXN0ZXNpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ProjeListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVMaXN0ZXNpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ProjeListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVMaXN0ZXNpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ProjeListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVMaXN0ZXNpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/ProjeListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVMaXN0ZXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/SanatsalFaalListe/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuYXRzYWxGYWFsTGlzdGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/SanatsalFaalListe/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuYXRzYWxGYWFsTGlzdGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/SanatsalFaalListe/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuYXRzYWxGYWFsTGlzdGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/SanatsalFaalListe/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuYXRzYWxGYWFsTGlzdGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/SanatsalFaalListe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuYXRzYWxGYWFsTGlzdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TasarimListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzYXJpbUxpc3Rlc2lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TasarimListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzYXJpbUxpc3Rlc2lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TasarimListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzYXJpbUxpc3Rlc2lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TasarimListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzYXJpbUxpc3Rlc2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TasarimListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzYXJpbUxpc3Rlc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TemelAlanListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtZWxBbGFuTGlzdGVzaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TemelAlanListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtZWxBbGFuTGlzdGVzaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TemelAlanListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtZWxBbGFuTGlzdGVzaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TemelAlanListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtZWxBbGFuTGlzdGVzaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TemelAlanListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtZWxBbGFuTGlzdGVzaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TezDanismanListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV6RGFuaXNtYW5MaXN0ZXNpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TezDanismanListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV6RGFuaXNtYW5MaXN0ZXNpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TezDanismanListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV6RGFuaXNtYW5MaXN0ZXNpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TezDanismanListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV6RGFuaXNtYW5MaXN0ZXNpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/TezDanismanListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV6RGFuaXNtYW5MaXN0ZXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/UyelikListesi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllbGlrTGlzdGVzaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/UyelikListesi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllbGlrTGlzdGVzaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/UyelikListesi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllbGlrTGlzdGVzaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/UyelikListesi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllbGlrTGlzdGVzaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/UyelikListesi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXllbGlrTGlzdGVzaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onals/Desktop/pc/AkademikBilgiYonetimSistemi/AkademikBilgiYonetimSistemi/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t7tj2vhza8

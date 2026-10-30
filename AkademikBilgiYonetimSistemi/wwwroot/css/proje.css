@@ -1,0 +1,35 @@
+.container-fluid-proje {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bs-callout bs-callout-warning-proje {
+    border-left-color: #1c0f45;
+}
+
+.bs-callout-proje {
+    border-color: #1c0f45;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    padding: 0px;
+}
+
+    .bs-callout-proje h4 {
+        text-align: left;
+        color: black;
+        text-decoration: underline;
+    }
+    .yazarlar-proje{
+        color: blue;
+        text-decoration: none;
+    }
+
+
+.bs-callout-proje p {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 500;
+}

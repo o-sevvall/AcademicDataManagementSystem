@@ -1,0 +1,32 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.MakaleListesiDetay>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int count = 1;
+}
+@*Sayfa başlığı *@
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">MAKALELER</span>
+<br />
+<br />
+<hr />
+
+@foreach (var item in Model) {
+   
+    <div class="container-fluid-makale">
+        <div id="callout-stacked-modals" class="bs-callout-makale bs-callout-warning-makale">
+            @*count ile verilerin sayısı gösteriliyor. Html.DisplayFor ile de veritabanından ilgili sütun adı yazılarak içerikler çekiliyor*@
+            <h4>@count) @Html.DisplayFor(modelItem => item.MakaleAdi)</h4>
+            <div class="yazarlar-makale">
+                <font color="blue">@Html.DisplayFor(modelItem => item.YazarAdi) <font color="black">@Html.DisplayFor(modelItem => item.DergiAdi), @Html.DisplayFor(modelItem => item.Yil)</font></font>
+            </div>
+            <p>
+                <span class="label" style="background-color:#2e629c;">@Html.DisplayFor(modelItem => item.KapsamAd)</span> &nbsp; <span class="label" style="background-color:#1c1364">@Html.DisplayFor(modelItem => item.HakemTurAd)</span> &nbsp;
+                <span class="label" style="background-color:#7bafd5">@Html.DisplayFor(modelItem => item.Endeks)</span> &nbsp; <span class="label" style="background-color:#7b7896">@Html.DisplayFor(modelItem => item.MakaleTuruAd)</span> &nbsp;      @Html.DisplayFor(modelItem => item.Doi)
+            </p>
+
+        </div>
+    </div>
+    count++;
+}
+   

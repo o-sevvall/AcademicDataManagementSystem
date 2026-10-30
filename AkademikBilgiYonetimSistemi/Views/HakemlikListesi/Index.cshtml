@@ -1,0 +1,150 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.HakemlikListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TcKimlikNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YayinId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KapsamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KapsamAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HakemlikTuru)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HakemlikTuruAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YayinYeri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HakemlikSayisi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YayinDili)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YayinDiliAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ulke)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UlkeAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndeksId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endeks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AlanBilgisi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuncellemeTarihi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AktifPasif)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AktifPasifAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TesvPuan)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TcKimlikNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YayinId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KapsamId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KapsamAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HakemlikTuru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HakemlikTuruAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YayinYeri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HakemlikSayisi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YayinDili)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YayinDiliAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ulke)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UlkeAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndeksId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endeks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlanBilgisi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuncellemeTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AktifPasif)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AktifPasifAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TesvPuan)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

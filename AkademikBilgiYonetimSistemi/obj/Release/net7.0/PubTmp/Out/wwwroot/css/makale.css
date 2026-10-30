@@ -1,0 +1,34 @@
+.container-fluid-makale {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bs-callout-warning-makale {
+    border-left-color: #1c0f45;
+}
+
+.bs-callout-makale {
+    border-color: #1c0f45;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    padding: 0px;
+}
+
+    .bs-callout-makale h4 {
+        text-align: left;
+        color: black;
+    }
+
+.yazarlar-makale {
+    text-align: left;
+}
+
+
+.bs-callout-makale p {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 500;
+   
+}

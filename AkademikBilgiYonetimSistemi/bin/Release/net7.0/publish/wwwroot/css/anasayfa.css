@@ -1,0 +1,460 @@
+.icerik { /*Ýçerik adlý divin genel ayarlarý*/
+    text-align: left;
+    margin-left: 45px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+.icerik h3{ /*Ýçerik divin içinde bulunan "genel bilgiler" baþlýðýnýn ayarlarý*/
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0%;
+}
+
+.icerik hr { /*Ýçerik divin içinde bulunan "genel bilgiler" baþlýðýnýn altýnda bulunan çizginin ayarlarý*/
+    width: 50%;
+    color: #1c0f45;
+    margin-top: 0%;
+}
+
+    .icerik strong { /*Ýçerik divin içinde bulunan "kurum bilgileri" ve "araþtýrma alanlarý" baþlýðýnýn ayarlarý*/
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+.bilgiler { /*Ýçerik divin içinde bulunan "kurum bilgileri" baþlýðýnýn içerik kýsmýnýn ayarlarý*/
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.bilgiler-arastirmaAlan { /*Ýçerik divin içinde bulunan "araþtýrma alanlarý" baþlýðýnýn içerik kýsmýnýn ayarlarý*/
+    font-size: 20px;
+    text-transform: capitalize;
+}
+#container {
+    height: 400px;
+}
+.container-metrik { /*metrik kýsmýnýn genel ayarlarý*/
+    margin-left: 4%;
+    margin-top: 3%;
+}
+/*buton diðer metrikler ayarý*/
+.btn-metrikler {
+    margin-top: -7%;
+    margin-left:75%;
+}
+/*offcanvas ayarlarý*/
+.offcanvas {
+    width: 60%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+/* Çizgiyi eklemek için stil */
+.offcanvas-header {
+    position: relative;
+}
+
+    .offcanvas-header::after {
+        content: "";
+        display: block !important;
+        width: 100%;
+        height: 1px;
+        background-color: #78acd3;
+        position: absolute;
+        top: 100%; /* Çizgiyi yazýnýn altýna yerleþtirir */
+    }
+
+   
+/*highchart css*/
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+/*chart radar css*/
+#chartjs-tooltip {
+    opacity: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    border-radius: 3px;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+#chartjs-radar {
+    width: 40%;
+    height: 40%;
+}
+
+.chartjs-tooltip-key {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.piechart_3d {
+    display: flex;
+    flex-direction: column;
+}
+/*.charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.piechart_3d {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.panel panel-primary{
+     right: 0;
+}*/
+/*metrik butonlar kýsmý*/
+.btn-makale {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+.btn-makale::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+}
+
+btn-makale::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.btn-makale:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+}
+.btn-bildiri {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 2px solid purple;
+    border-radius: 50%;
+}
+
+    .btn-bildiri::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+.btn-bildiri::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+    .btn-bildiri:hover {
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: none;
+    }
+.btn-proje {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+
+    .btn-proje::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+.btn-proje::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.btn-proje:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+}
+.btn-danisman {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 2px solid pink;
+    border-radius: 50%;
+}
+
+    .btn-danisman ::before {
+        /*content: "";*/
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+.btn-danisman ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.btn-danisman:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+}
+.btn-patent {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+    .btn-patent::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .btn-patent::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+.btn-patent:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .btn-makale {
+        font-size: 1em;
+    }
+
+    .btn-bildiri {
+        font-size: 1em;
+    }
+
+    .btn-danisman {
+        font-size: 1em;
+    }
+
+    .btn-patent {
+        font-size: 1em;
+    }
+
+    .btn-proje {
+        font-size: 1em;
+    }
+}
+
+
+
+
+.container-fluid-akademikGorev { /*akademik görevler için kullanýlan kýsmýn genel ayarlarý*/
+    margin-top: 2%;
+}
+
+.horizontal-timeline-akademikGorev .items-akademikGorev { /*akademik görevler için kullanýlan çizginin ayarlarý */
+    border-top: 3px solid #77bce0;
+}
+
+    .horizontal-timeline-akademikGorev .items-akademikGorev .items-list-akademikGorev { /*akademik görevler için kullanýlan verilerin genel ayarlarý */
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        margin-right: 0;
+    }
+
+        .horizontal-timeline-akademikGorev .items-akademikGorev .items-list-akademikGorev:before {
+            content: "";
+            position: absolute;
+            height: 36px;
+            border-right: 2px dashed #dee2e6;
+            top: 0;
+        }
+
+        .horizontal-timeline-akademikGorev .items-akademikGorev .items-list-akademikGorev .event-date-akademikGorev { /*akademik görevler için kullanýlan yýl kýsmýnýn ayarlarý */
+            position: absolute;
+            top: 36px;
+            left: 0;
+            right: 0;
+            width: 75px;
+            margin: 0 auto;
+            font-size: 1.9rem;
+            padding-top: 2px;
+        }
+
+.container-fluid-ogrenimBilgisi { /*öðrenim bilgisi için kullanýlan kýsmýn genel ayarlarý*/
+    margin-top: 4%;
+}
+
+.horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi { /*öðrenim bilgisi için kullanýlan çizginin ayarlarý */
+    border-top: 3px solid #77bce0;
+}
+
+    .horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi .items-list-ogrenimBilgisi { /*öðrenim bilgisi için kullanýlan verilerin genel ayarlarý */
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        margin-right: 0;
+    }
+
+        .horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi .items-list-ogrenimBilgisi:before {
+            content: "";
+            position: absolute;
+            height: 36px;
+            border-right: 2px dashed #dee2e6;
+            top: 0;
+        }
+
+        .horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi .items-list-ogrenimBilgisi .event-date-ogrenimBilgisi { /*öðrenim bilgisi için kullanýlan yýl kýsmýnýn ayarlarý */
+            position: absolute;
+            top: 36px;
+            left: 0;
+            right: 0;
+            width: 75px;
+            margin: 0 auto;
+            font-size: 1.9rem;
+            padding-top: 2px;
+        }
+
+/*yukarýdaki ayarlarýn diðer cihazlarda daha düzenli görünmesi saðlanýlýr*/
+@media (min-width: 915px) {
+    .icerik {
+        font-size: 14px;
+    }
+    .horizontal-timeline-akademikGorev .items-akademikGorev .items-list-akademikGorev {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+
+        .horizontal-timeline-akademikGorev .items-akademikGorev .items-list-akademikGorev .event-date-akademikGorev {
+            top: -40px;
+        }
+
+    .horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi .items-list-ogrenimBilgisi {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+
+        .horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi .items-list-ogrenimBilgisi .event-date-ogrenimBilgisi {
+            top: -40px;
+        }
+}
+
+/*yukarýdaki ayarlarýn diðer cihazlarda daha düzenli görünmesi saðlanýlýr*/
+/*@media (min-width: 870px) {
+    .horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi .items-list-ogrenimBilgisi {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+
+        .horizontal-timeline-ogrenimBilgisi .items-ogrenimBilgisi .items-list-ogrenimBilgisi .event-date-ogrenimBilgisi {
+            top: -40px;
+        }
+}*/

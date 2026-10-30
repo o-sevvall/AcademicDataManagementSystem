@@ -1,0 +1,533 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    IEnumerable<AkademikGorevListesi> akademikgorev = ViewData["akademikgorev"] as IEnumerable<AkademikGorevListesi>; /*Akademik görevler adlı veritabanını kullanabilmek için gerekli olan kod*/
+    IEnumerable<OgrenimBilgisiListesi> ogrenimBilgisi = ViewData["ogrenimBilgisi"] as IEnumerable<OgrenimBilgisiListesi>; /*Öğrenim bilgisi adlı veritabanını kullanabilmek için gerekli olan kod*/
+
+
+}
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/@@adminkit/core@latest/dist/js/app.js"></script>
+<script src="~/js/cdn.jsdelivr.net_npm_chart.js"></script>
+<script src="~/js/cdnjs.cloudflare.com_ajax_libs_chart.js_2.6.0_chart.min.js"></script>
+<script src="~/js/cdnjs.cloudflare.com_ajax_libs_html5shiv_3.7.2_html5shiv.min.js"></script>
+<script src="~/js/cdnjs.cloudflare.com_ajax_libs_moment.js_2.17.1_moment.min.js"></script>
+<script src="~/js/cdnjs.cloudflare.com_ajax_libs_respond.js_1.4.2_respond.js"></script>
+<script src="~/js/code.highcharts.com_highcharts.js"></script>
+<script src="~/js/code.highcharts.com_highcharts.src.js"></script>
+<script src="~/js/code.highcharts.com_modules_accessibility.js"></script>
+<script src="~/js/gstatic.com_charts_loader.js"></script>
+
+
+<!--Anasayfada bulunan genel bilgiler bölümünün ayarlanılması ve veri tabanından çekme-->
+<div class="icerik">
+    <font color="#7bafd5"><h3>Genel Bilgiler</h3></font>
+    <hr />
+    <font color="darkblue"><strong>Kurum Bilgileri:</strong></font>
+    <span class="bilgiler">
+        @ViewBag.kadro @*HomeControllerda veritabanından çekilen verilerin kullanılması*@
+    </span>
+    <br />
+    <font color="darkblue"><strong>Araştırma Alanları:</strong></font>
+    <span class="bilgiler-arastirmaAlan">
+        @ViewBag.arastirmaAlani @*HomeControllerda veritabanından çekilen verilerin kullanılması*@
+    </span>
+
+
+    <!--Anasayfada bulunan metrikler bölümünün ayarlanılması-->
+    <font color="#7bafd5">
+        <h4 style="font-size: 24px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin-top: 50px;">
+            Metrikler
+        </h4>
+
+    </font>
+    <hr />
+    <!--Diğer Metrikler Bölümü-->
+    <button class="btn-metrikler btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Diğer Metrikler</button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <!--High Chart-->
+        <figure class="highcharts-figure">
+            <div id="containerHc"></div>
+        </figure>
+
+       
+        <!-- Radar Chart-->
+        <div id="chartjs-radar" style="margin-top: 255px;">
+            <canvas id="canvas" width="300" height="300" style=" margin-top:-180px; margin-left: 68px; padding-top: 8%; text-align: left;"></canvas>
+            <div class style="float: right; margin-right: -450px; margin-top: -281px">
+                <label class="text-decoration"><span style="font-weight: 700;">MBT:</span> Mühendislik, Bilişim ve Teknoloji (ENG)</label><br>
+                <label class="text-decoration"><span style="font-weight: 700;">TB:</span> Temel Bilimler (SCI)</label><br>
+                <label class="text-decoration"><span style="font-weight: 700;">SB:</span> Sosyal Bilimler (SOC)</label><br>
+                <label class="text-decoration"><span style="font-weight: 700;">KT:</span> Klinik Tıp (MED)</label><br>
+                <label class="text-decoration"><span style="font-weight: 700;">YB:</span> Yaşam Bilimleri (LIFE)</label><br>
+                <label class="text-decoration"><span style="font-weight: 700;">TÇB:</span> Tarım ve Çevre Bilimleri (AGE)</label><br>
+                <label class="text-decoration"><span style="font-weight: 700;">SBB:</span> Sanat ve Beşeri Bilimler (AHCI)</label><br>
+                <label class="text-decoration"><span style="font-weight: 700;">D:</span> Diğer</label>
+            </div>
+        </div>
+
+        <!--Pie Chart -->
+        <div class="col-lg-12">
+           
+            <div class="col-lg-6 col-xs-12 text-center">
+                <div id="piechart_3d" style=" width: 650px; height: 550px; margin-top: 80px;  margin-left: -78px;"></div>
+            </div>
+
+
+
+            <!--Diğer metrikler panel kısmı-->
+            <div class="col-lg-6 col-xs-12 text-center">
+                <div class="panel panel-primary" style="margin-top: 187px; max-width: 315px; margin-left: auto; margin-right: -2px;;">
+
+                    <div class="panel-heading">Türlerine Göre Yayın Sayıları</div>
+
+                    <div class="panel-body">
+                        <div id="publicationCountByTypes_list"><p class="paragraph-style"><a class="anchor-style"><i class="fa fa-arrow-circle-right" aria-hidden="true" style="margin-right: 4px;"></i> ISI Dergilerinde Makale (28)</a></p><p class="paragraph-style"><a class="anchor-style"><i class="fa fa-arrow-circle-right" aria-hidden="true" style="margin-right: 4px;"></i> Bildiri (11)</a></p><p class="paragraph-style"><a class="anchor-style"><i class="fa fa-arrow-circle-right" aria-hidden="true" style="margin-right: 4px;"></i> Diğer Dergilerde Makale (5)</a></p></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="container-metrik">
+        <button class='btn-makale'>
+            <a href="~/MakaleListesiDetay">
+                <i class="fa-regular fa-pen-to-square" style="position:absolute; font-size:22px; font-weight: 600; color:black; margin-top: -27%; margin-left: -4%;"></i>
+                <p class="text-center" style="position: absolute; margin-top: -4%; margin-left: 26%; font-size: 20px; font-weight: 600; color: black;">Makaleler</p>
+                <p class="text-center1" style="position: absolute;color: black;margin-top: 19%;margin-left: 45%;font-size: 22px;font-weight: 600;">@ViewBag.makaleSayisi</p>
+            </a>
+        </button>
+        <button class='btn-bildiri'>
+            <a href="~/BildiriListesi">
+                <i class="fa-solid fa-newspaper" style="position:absolute; font-size:22px; font-weight: 600; color:black; margin-top: -27%; margin-left: -4%;"></i>
+                <p class="text-center" style="position: absolute; margin-top: -4%; margin-left: 30%; font-size: 20px; font-weight: 600; color: black;">Bildiriler</p>
+                <p class="text-center1" style="position: absolute;color: black;margin-top: 19%;margin-left: 45%;font-size: 22px;font-weight: 600;">@ViewBag.bildiriSayisi</p>
+            </a>
+        </button>
+        <button class='btn-proje'>
+            <a href="~/ProjeListesi">
+                <i class="fa-solid fa-list-check" style="position:absolute; font-size:22px; font-weight: 600; color:black; margin-top: -27%; margin-left: -4%;"></i>
+                <p class="text-center" style="position: absolute; margin-top: -4%; margin-left: 31%; font-size: 20px; font-weight: 600; color: black;">Projeler</p>
+                <p class="text-center1" style="position: absolute;color: black;margin-top: 19%;margin-left: 45%;font-size: 22px;font-weight: 600;">@ViewBag.projeSayisi</p>
+            </a>
+        </button>
+        <button class='btn-danisman'>
+            <a href="~/TezDanismanListesi">
+                <i class="fa-solid fa-pen" style="position:absolute; font-size:22px; font-weight: 600; color:black; margin-top: -27%; margin-left: -4%;"></i>
+                <p class="text-center" style="position: absolute; margin-top: -4%; margin-left: 5%; font-size: 20px; font-weight: 600; color: black;">Tez Danışmanlıklar</p>
+                <p class="text-center1" style="position: absolute;color: black;margin-top: 19%;margin-left: 45%;font-size: 22px;font-weight: 600;">@ViewBag.danismanlikSayisi</p>
+            </a>
+        </button>
+        <button class='btn-patent'>
+            <a href="~/PatentListesi">
+                <i class="fa-solid fa-signature" style="position:absolute; font-size:22px; font-weight: 600; color:black; margin-top: -27%; margin-left: -4%;"></i>
+                <p class="text-center" style="position: absolute; margin-top: -4%; margin-left: 30%; font-size: 20px; font-weight: 600; color: black;">Patentler</p>
+                <p class="text-center1" style="position: absolute;color: black;margin-top: 19%;margin-left: 45%;font-size: 22px;font-weight: 600;">@ViewBag.patentSayisi</p>
+            </a>
+        </button>
+
+
+
+    </div>
+    <!--Anasayfada bulunan akademik görevler kısmının dizaynı ve bilgilerin veritabanından çekilmesi-->
+    <font color="#7bafd5">
+        <h4 style="font-size: 24px; font-weight: bold; font-family: 'Times New Roman', Times, serif; margin-top: 50px; text-align:left; margin-left:40px;">
+            Akademik Görevler
+        </h4>
+    </font>
+    <hr />
+    <div class="container-fluid-akademikGorev py-5">
+        <div class="row-akademikGorev">
+            <div class="col-lg-12">
+
+                <div class="horizontal-timeline-akademikGorev">
+
+                    <ul class="list-inline-akademikGorev items-akademikGorev">
+                        @foreach (var item in akademikgorev)
+                        {
+                            <li class="list-inline-item-akademikGorev items-list-akademikGorev">
+                                <div class="px-4">
+                                    <div class="event-date-akademikGorev badge-akademikGorev" style="background-color:#7bafd5;">@item.Bastar1</div>
+                                    <h5 class="pt-2" style="font-size: 16px; font-weight: 600; color:darkslateblue;">@item.KadroUnvanAdi</h5>
+                                    <p class="text-muted-akademikGorev" style="font-size: 14px;">
+                                        @item.UnivBirimAdi <br /> ,
+                                        @item.Fakultebilgisi<br /> , 
+                                        @item.Bolumbilgisi
+                                    </p>
+
+                                </div>
+                            </li>
+                        }
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Anasayfada bulunan öğrenim bilgileri kısmının dizaynı ve bilgilerin veritabanından çekilmesi-->
+<font color="#7bafd5"><h4 style="font-size: 24px; font-weight: bold; font-family: 'Times New Roman', Times, serif;margin-top: 50px; text-align:left; margin-left:40px;">Öğrenim Bilgisi</h4></font>
+    <hr />
+    <div class="container-fluid-ogrenimBilgisi py-5">
+        <div class="row-ogrenimBilgisi">
+            <div class="col-lg-12">
+
+                <div class="horizontal-timeline-ogrenimBilgisi">
+
+                    <ul class="list-inline-ogrenimBilgisi items-ogrenimBilgisi">
+                        @foreach (var item in ogrenimBilgisi)
+                        {
+                            <li class="list-inline-item-ogrenimBilgisi items-list-ogrenimBilgisi">
+                                <div class="px-4">
+                                    <div class="event-date-ogrenimBilgisi badge-ogrenimBilgisi" style="background-color:#74c4ff; width: 104px">
+                                        @item.Bastar1 - @item.Bittar1
+                                    </div>
+                                    <h5 class="pt-2" style="font-size: 16px; font-weight: 600; color:darkslateblue;">@item.ProgramAdi</h5>
+                                    <p class="text-muted-ogrenimBilgisi" style="font-size: 14px;">
+                                        @item.UnvBirimAdi <br /> ,
+                                        @item.Fakultebilgisi<br /> ,
+                                        @item.Bolumbilgisi
+                                    </p>
+
+                                </div>
+                            </li>
+                        }
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+ <!--High Chart JavaScript-->
+
+<script>
+
+    $(document).ready(function () {
+        var apiKey = "b1790162890bb8fd8d0c62dac7dff6b8";
+        var apiUrl = "https://api.elsevier.com/content/search/scopus"; // Scopus arama API URL'si
+        var authorId = "56200599600";
+
+        // API isteği için parametreler
+        var query = "AU-ID(" + authorId +  ")" // Arama sorgusu
+        
+
+        $.ajax({
+            url: apiUrl,
+            type: "GET",
+            data: {
+                query: query,
+               
+            },
+            headers: {
+                "X-ELS-APIKey": apiKey
+            },
+            success: function (response) {                
+                console.log(response);
+
+                var articles = response["search-results"]["entry"];
+                console.log(articles);
+
+                // articles.forEach(function (article) {
+                //     var articleTitle = article.title[0];
+                //     var citations = article["citedby-count"];
+                //     var documentLink = article.link;
+
+                //     console.log("Makale başlıgı:", articleTitle);
+                //     console.log("Atıf sayısı", citations);
+
+                //     // documentLink.forEach(function (link) {
+                //     //     if (link["@@ref"] === "scopus" && link["@@type"] === "scopus") {
+                //     //         console.log("Dokuman linki:", link["@@href"]);
+                //     //     }
+                //     // })
+
+                // })
+            },
+            error: function (error) {
+                console.error("API hatası:", error);
+            }
+        });
+    });
+
+
+
+
+
+
+
+
+    var atiflarLabels = [];
+    var atiflarData = [];
+    var yayinlarData = [];
+    // AJAX isteği yaparak veriyi çekiyoruz
+    $.ajax({
+        url: '/yayin.json',
+        success: function (data) {
+            // Gelen veriyi işliyoruz
+            for (let i = 0; i < data.citeObj.length; i++) {
+                atiflarLabels.push(data.citeObj[i].x.toString());
+                atiflarData.push(data.citeObj[i].y);
+                yayinlarData.push(data.docObj[i].y);
+            }
+        }
+    });
+
+
+
+    $(document).ready(() => {
+        Highcharts.chart('containerHc', {
+            chart: {
+                zoomType: 'xy'
+            },
+            title: {
+                text: 'Yıllara Göre Yayın Ve Atıf Sayıları'
+            },
+            xAxis: [{
+                categories: atiflarLabels,
+                crosshair: true
+            }],
+            yAxis: [{ // Primary yAxis
+                labels: {
+                    format: '{value}',
+                    style: {
+                        color: Highcharts.getOptions().colors[1]
+                    }
+                },
+                title: {
+                    text: 'Atıflar',
+                    style: {
+                        color: Highcharts.getOptions().colors[1]
+                    }
+                }
+            }, { // Secondary yAxis
+                title: {
+                    text: 'Yayınlar',
+                    style: {
+                        color: Highcharts.getOptions().colors[0]
+                    }
+                },
+                labels: {
+                    format: '{value}',
+                    style: {
+                        color: Highcharts.getOptions().colors[0]
+                    }
+                },
+                opposite: true
+            }],
+            tooltip: {
+                shared: true
+            },
+            legend: {
+                align: 'left',
+                x: 80,
+                verticalAlign: 'top',
+                y: 60,
+                floating: true,
+                backgroundColor:
+                    Highcharts.defaultOptions.legend.backgroundColor || // theme
+                    'rgba(255,255,255,0.25)'
+            },
+            series: [{
+                name: 'Atıflar',
+                type: 'column',
+                yAxis: 1,
+                data: atiflarData
+
+            }, {
+                name: 'Yayınlar',
+                type: 'spline',
+                data: yayinlarData
+            }]
+        });
+    });
+</script>
+
+<!--Radar Chart Javascript-->
+
+<script>
+    // Grafik renklerini tanımlayan bir nesne
+    window.chartColors = {
+        red: 'rgb(255, 99, 132)',
+        orange: 'rgb(255, 159, 64)',
+        yellow: 'rgb(255, 205, 86)',
+        green: 'rgb(75, 192, 192)',
+        blue: 'rgb(54, 162, 235)',
+        purple: 'rgb(153, 102, 255)',
+        grey: 'rgb(231,233,237)'
+    };
+    // Rastgele bir sayı üretmek için kullanılan fonksiyon
+    window.randomScalingFactor = function () {
+        return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+    }
+
+    var randomScalingFactor = function () {
+        return Math.round(Math.random() * 100);
+    };
+
+    var wosLabels = []; // Grafik etiketlerini içerecek boş bir dizi
+    var wosData = []; // Grafik verilerini içerecek boş bir dizi
+
+    $.ajax({
+        // AJAX isteği yaparak veriyi çekiyoruz
+        url: '/wos.json',
+        success: function (data) {
+            // Gelen veri işleniyor ve wosLabels ve wosData dizilerine ekleniyor
+            for (let i = 0; i < data.length; i++) {
+                wosLabels.push(data[i].TopicName);
+                wosData.push(data[i].PublicationCount);
+            }
+        }
+    });
+
+    var color = Chart.helpers.color;
+    var config = {
+        type: 'radar',
+        data: {
+            labels: wosLabels,  // Grafik etiketleri
+            datasets: [{
+                label: "Araştırma Alanlarına Göre Yayınlar (WoS)", // Veri seti başlığı
+                backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.blue,  // Veri seti sınırlarının rengi
+                pointBackgroundColor: window.chartColors.blue,  // Noktaların rengi
+                data: wosData
+            }]
+        },
+        options: {  // Grafik seçenekleri (başlık, ölçek, açıklamalar vb.)
+            legend: {
+                position: 'top',
+                display: false
+            },
+            title: {
+                display: true,
+                text: 'Araştırma Alanlarına Göre Yayınlar (WoS)'
+            },
+            scale: {
+                ticks: {
+                    beginAtZero: true
+                }
+            },
+            tooltips: {
+                enabled: false,
+                callbacks: {
+                    label: function (tooltipItem, data) {
+                        var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
+                      
+                        return datasetLabel + ': ' + tooltipItem.yLabel + ': ' + data.datasets[tooltipItem.datasetIndex].notes[tooltipItem.index];
+                    }
+                },
+                custom: function (tooltip) {
+                    // tooltip elemanı
+                    var tooltipEl = document.getElementById('chartjs-tooltip');
+                    if (!tooltipEl) {
+                        tooltipEl = document.createElement('div');
+                        tooltipEl.id = 'chartjs-tooltip';
+                        tooltipEl.innerHTML = "<table></table>"
+                        document.body.appendChild(tooltipEl);
+                    }
+                   
+                    if (tooltip.opacity === 0) {
+                        tooltipEl.style.opacity = 0;
+                        return;
+                    }
+                   
+                    tooltipEl.classList.remove('above', 'below', 'no-transform');
+                    if (tooltip.yAlign) {
+                        tooltipEl.classList.add(tooltip.yAlign);
+                    } else {
+                        tooltipEl.classList.add('no-transform');
+                    }
+                    function getBody(bodyItem) {
+                        return bodyItem.lines;
+                    }
+                    // İpucu başlığı ve içeriği oluşturulur
+                    if (tooltip.body) {
+                        var titleLines = tooltip.title || [];
+                        var bodyLines = tooltip.body.map(getBody);
+                        var innerHtml = '<thead>';
+                        titleLines.forEach(function (title) {
+                            innerHtml += '<tr><th>' + title + '</th></tr>';
+                        });
+                        innerHtml += '</thead><tbody>';
+                        bodyLines.forEach(function (body, i) {
+                            var colors = tooltip.labelColors[i];
+                            var style = 'background:' + colors.backgroundColor;
+                            style += '; border-color:' + colors.borderColor;
+                            style += '; border-width: 2px';
+                            var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
+                            innerHtml += '<tr><td>' + span + body + '</td></tr>';
+                        });
+                        innerHtml += '</tbody>';
+                        var tableRoot = tooltipEl.querySelector('table');
+                        tableRoot.innerHTML = innerHtml;
+                    }
+                    var position = this._chart.canvas.getBoundingClientRect();
+                    // İpucu pozisyonu ve font stil ayarları
+                    tooltipEl.style.opacity = 1;
+                    tooltipEl.style.left = position.left + tooltip.caretX + 'px';
+                    tooltipEl.style.top = position.top + tooltip.caretY + 'px';
+                    tooltipEl.style.fontFamily = tooltip._fontFamily;
+                    tooltipEl.style.fontSize = tooltip.fontSize;
+                    tooltipEl.style.fontStyle = tooltip._fontStyle;
+                    tooltipEl.style.padding = tooltip.yPadding + 'px ' + tooltip.xPadding + 'px';
+                }
+            }
+        }
+    };
+    window.onload = function () {
+        window.myRadar = new Chart(document.getElementById("canvas"), config);
+    };
+    var colorNames = Object.keys(window.chartColors);
+
+</script>
+
+<!--Pie Chart JavaScript-->
+
+<script>
+google.charts.load("current", {
+  packages: ["corechart"]
+});
+google.charts.setOnLoadCallback(drawPieChart);
+
+
+function drawPieChart() {
+
+        $.ajax({
+            // AJAX isteği yaparak veriyi çekiyoruz
+            url: '/yoksis.json',
+            success: function (fData) {
+                var data = google.visualization.arrayToDataTable(fData);
+                var options = {
+                    title: "Türlerine Göre Proje Sayıları",
+                    is3D: true
+                };
+                var chart = new google.visualization.PieChart(
+                    document.getElementById("piechart_3d")
+                );
+                chart.draw(data, options);
+
+            }
+        });
+
+
+}
+
+
+
+</script>

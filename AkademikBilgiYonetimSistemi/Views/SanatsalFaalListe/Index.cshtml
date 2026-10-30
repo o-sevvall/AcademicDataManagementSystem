@@ -1,0 +1,30 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.SanatsalFaalListe>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">SANATSAL FAALİYETLER</span>
+<br />
+<br />
+<hr />
+<!--Controller kısmında veritabanından çektiğimiz bilgilerin projeler sayfasında kullanılması-->
+@foreach (var item in Model)
+{
+    <div class="container-fluid-sanatsal">
+        <div id="callout-stacked-modals" class="bs-callout-sanatsal bs-callout-warning-sanatsal">
+            <h4> @Html.DisplayFor(modelItem => item.EtkinlikAdi)</h4>
+            <div class="icerik-sanatsal">
+                <p>
+                    Etkinlik Yeri: @Html.DisplayFor(modelItem => item.EtkinlikYeri),
+                    <br>
+                    Düzenleyen(ler): @Html.DisplayFor(modelItem => item.Duzenleyenler)
+                </p>
+            </div>
+            <p>
+                <span class="label label-default">@Html.DisplayFor(modelItem => item.KapsamAd)</span>
+                <span class="label label-success">@Html.DisplayFor(modelItem => item.BasTarih)- @Html.DisplayFor(modelItem => item.BitTarih)</span>
+            </p>
+
+        </div>
+    </div>
+}

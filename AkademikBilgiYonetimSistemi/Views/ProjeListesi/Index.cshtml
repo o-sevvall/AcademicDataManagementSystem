@@ -1,0 +1,30 @@
+﻿@model IEnumerable<AkademikBilgiYonetimSistemi.Models.ProjeListesi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int count = 1;
+}
+
+
+<span class="label" style="background-color:#7bafd5; float: left; font-size:18px; margin-left: 17px; margin-top: 16px;">PROJELER</span>
+<br />
+<br />
+<hr />
+<!--Controller kısmında veritabanından çektiğimiz bilgilerin projeler sayfasında kullanılması-->
+@foreach (var item in Model) {
+    <div class="container-fluid-proje">
+        <div id="callout-stacked-modals-proje" class="bs-callout-proje bs-callout-warning-proje">
+            <h4>@count) @Html.DisplayFor(modelItem => item.ProjeAd)</h4>
+            <div class="yazarlar-proje">
+                <p>@Html.DisplayFor(modelItem => item.YazarAdi)</p>
+            </div>
+            <p>
+                <span class="label" style="background-color:#7b7896">@Html.DisplayFor(modelItem => item.UnivAdi)</span> <span class="label" style="background-color:#2e629c;">@Html.DisplayFor(modelItem => item.ProjeTuruAd)</span> <span class="label" style="background-color:#7bafd5">@Html.DisplayFor(modelItem => item.ProjeDurumuAd)</span> @Html.DisplayFor(modelItem => item.BasTar) -@Html.DisplayFor(modelItem => item.BitTar), @Html.DisplayFor(modelItem => item.Butce) @Html.DisplayFor(modelItem => item.ParaBirimiAd)
+            </p>
+            
+        </div>
+    </div>
+    count++;
+}
+                        

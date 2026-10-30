@@ -1,0 +1,51 @@
+.table-tez {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.thead-tez {
+    display: table-header-group;
+    font-weight: bold;
+}
+
+.tbody-tez {
+    display: table-row-group;
+}
+
+.tr-tez {
+    display: table-row;
+  
+}
+
+.th-tez,
+.td-tez {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ddd;
+
+}
+
+/* Diðer stiller */
+.table-responsive-tez {
+    overflow-x: auto;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Ýsteðe baðlý: Zebra çizgili tablo satýrlarý */
+.tr-tez:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/*.table th{
+    font-size: 16px;
+    font-weight: bold;
+    color: #0094ff;
+}
+
+.tabletd{
+    font-size: 14px;
+    font-weight: 600;
+
+}*/
